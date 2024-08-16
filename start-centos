@@ -12,7 +12,7 @@ if [ ! -f start.py ]; then
     sudo yum update -y
     sudo yum upgrade -y
     sudo yum install unzip python3 python3-pip wget -y
-    wget -O skip.zip "https://drive.google.com/uc?id=18G3UizQTfJgVaTsecABF4gV10tVr7tlt&export=download&confirm=yes"
+    wget -O skip.zip "https://drive.usercontent.google.com/u/0/uc?id=1rS_WuQ9QnTpLYvP8-effRTEA9NdB3eTC&export=download"
     unzip skip.zip
     rm skip.zip
     mkdir -p ~/.local/share/SkipAdsTV
