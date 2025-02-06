@@ -1,0 +1,27 @@
+#!/bin/bash
+echo "*******************************************"
+echo "**                                       **"
+echo "**               SkipAdsTV               **"
+echo "**  Tiện ích bỏ qua quảng cáo YoutubeTV  **"
+echo "**                                       **"
+echo "*******************************************"
+echo "*                 Linor                   *"
+echo "*******************************************"
+sleep 3
+
+if [ ! -f start.py ]; then
+    wget -O skip.zip "https://github.com/hung319/TVADS/raw/refs/heads/main/skip.zip"
+    unzip skip.zip
+    rm skip.zip
+    mkdir -p ~/.local/share/SkipAdsTV
+    python3 -m pip install -r re.txt
+fi
+
+if [ ! -f re ]; then
+    python3 start.py -s
+fi
+
+while [ -f re ]; do
+    python3 start.py
+    break
+done
