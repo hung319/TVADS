@@ -12,7 +12,7 @@ sleep 3
 # Check if the virtual environment already exists
 if [ ! -d "venv" ]; then
     # Create a virtual environment
-    sudo apt install python3-venv
+    sudo apt install python3-venv -y
     python3 -m venv venv
 fi
 
