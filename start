@@ -28,6 +28,7 @@ if [ ! -f start.py ]; then
     unzip skip.zip
     rm skip.zip
     cd adsyt-main
+    rm -rf ~/.local/share/SkipAdsTV
     mkdir -p ~/.local/share/SkipAdsTV
     python3 -m pip install -r re.txt
 fi
